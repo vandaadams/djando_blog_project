@@ -52,11 +52,22 @@
             <a class="nav navbar-right" href="{% url 'login' %}"> <span class="glyphicon glyphicon-user"></span> </a>
           </li>
           {% endif %}
-
         </ul>
       </div>
-
     </nav>
-    <!-- CONTENT -->
+
+    <!-- CONTENT BLOCK -->
+    <div class="content container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="blog_post">
+              {% block content %}
+              {% endblock %}
+          </div>
+
+        </div>
+
+      </div>
+    </div>
   </body>
 </html>
